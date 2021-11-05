@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* reset = 초기화 */
+*{margin: 0; padding: 0;}
+li {margin: 0; padding: 0; list-style: none;}
+/* margin : 바깥여백 */
+/* padding : 안쪽여백 */
+#warp {width: 1200px; margin: 0 auto; }
+
+/* header */
+#warp header{width: 1200px; height: 120px; border-bottom: 1px solid #000;
+box-sizing: border-box;
+/* box-sizing: border-box; : margin, padding, border에 선의 사이즈를 포함시키겠다는 의미 */
+}
+/* logo */
+#warp header .logo {width: 300px; height: 120px; float: left;}
+#warp header .logo img {margin-top: 48px;}
+#warp header .logo img:hover {opacity: 0.7;}
+/* opacity : 투명도 0.7 -> 70% */
+
+#warp header .menu {width: 900px; height: 120px; float: left;}
+#warp header .menu ul {float: right; margin-top: 48px;}
+#warp header .menu ul li {float: left; margin-left: 60px;}
+#warp header .menu ul li a {font-size: 17px; color: #000; text-decoration: none; font-weight: bold;}
+/* text-decoration: none; : 링크에 선 생기는거 없애기 */
+/* font-weight: bold; : 글자 굵게 하기 */
+#warp header .menu ul li a:hover{color: #999;}
+/* :hover : 마우스 올렸을때 */
+
+#warp section.con {width: 1200px; height: 500px; background: #999;}
+#warp section.con .slide {width: 730px; height: 500px; background: rgb(187, 227, 240); float: left;}
+#warp section.con .slide img {display: block;}
+
+#warp section.con .nb {width: 470px; height: 500px; background: rgb(162, 223, 223); float: left;}
+/* 공지사항 */
+#warp section.con .nb .notice {width: 470px; height: 250px; background: #fff;}
+#warp section.con .nb .notice h2 {color: #333; padding: 12px 0 0 7px; /* 상단, 오쪽, 하단, 왼쪽 */}
+#warp section.con .nb .notice ul {padding: 7px;} /* 상단, 오쪽, 하단, 왼쪽 : 7px */
+#warp section.con .nb .notice ul li {height: 32px; line-height: 32px; /* 리스트 높이값으 30px으로 준 이후 리스트 내용을 수직 중앙정렬로 하려면 line-height값을 같은수치로 준다 */
+     border-bottom: 1px dotted #ddd;}
+#warp section.con .nb .notice ul li a {color: #666; text-decoration: none; font-size: 14px; /* 링크 줄 없애기 */}
+#warp section.con .nb .notice ul li a:hover {color: #999; text-decoration: underline; /* 링크 줄 넣기 */}
+#warp section.con .nb .notice ul li span {color: #999; font-size: 14px; float: right;}
+/* 배너 */
+#warp section.con .nb .banner {width: 470px; height: 250px;}
+
+/* #warp section.btn {width: 1200px; height: 180px; background: #ddd;} */
+#warp section.btn {width: 1200px; height: 180px; background: #fff;}
+#warp section.btn ul li {float: left; margin: 40px 50px;} /* 상하, 좌우 */
+#warp section.btn ul li img {width: 100px; height: 100px;}
+#warp section.btn ul li img:hover {opacity: 0.7;}
+
+/* 주소 + 저작권 */
+#warp footer {width: 1200px; height: 120px; border-top: 1px solid #000; box-sizing: border-box;}
+
+#warp footer p {font-size: 13px; text-align: center; padding-top: 20px; line-height: 1.7;}
+#warp footer a {color: #000; text-transform: uppercase; text-decoration: none;}
+#warp footer a:hover {color: #999; text-decoration: underline;}
+
